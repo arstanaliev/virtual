@@ -13,7 +13,7 @@ function App() {
     const [darkMode, setDarkMode] = useState(false)
     return (
         <div className="App" style={{
-            background: darkMode ? "#111827" : "#00004b",
+            background: darkMode ? "#00004b" : "#111827",
         }}>
             <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
             <Hero/>
