@@ -1,7 +1,7 @@
 import React from 'react';
 import headerLogo from "../../img/Logo.png"
 
-const Header = () => {
+const Header = ({darkMode, setDarkMode}) => {
     return (
         <section>
             <div className="container">
@@ -17,7 +17,7 @@ const Header = () => {
                             <a href="" className="text-[#F9FAFB] text-[14px]">Pricing</a>
                             <a href="" className="text-[#F9FAFB] text-[14px]">Blog</a>
                             <div>
-                                <button className="text-[14px] bg-gradient-to-br from-purple-600 to-blue-500 text-[#F9FAFB] py-[10px] px-[20px] rounded-[5px]">Contact Us</button>
+                                <button onClick={() => setDarkMode(!darkMode)} className="text-[14px] bg-gradient-to-br from-purple-600 to-blue-500 text-[#F9FAFB] py-[10px] px-[20px] rounded-[5px]">Contact Us</button>
                             </div>
                         </div>
                     </div>
